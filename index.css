@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #3d087b;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  height: 95%;
+  width: 80%;
+  margin: auto;
+}
+.top {
+  margin-bottom: 3rem;
+}
+.logo {
+  margin-top: 20px;
+}
+.timer {
+  width: 600px;
+  height: 140px;
+  background: white;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+  z-index: 1;
+  padding: 0 35px;
+  font-size: 36px;
+}
+.timer p {
+  font-size: 40px;
+}
+.timer h2 {
+  letter-spacing: 0px;
+  color: #3d087b;
+  opacity: 1;
+  font-size: 20px;
+  margin-right: 20px;
+  letter-spacing: 0px;
+}
+.shadowA,
+.shadowB {
+  position: absolute;
+  z-index: -1;
+}
+
+.shadowA {
+  top: 0px;
+  left: 70px;
+  width: 456px;
+  height: 155px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 0.71;
+}
+
+.shadowB {
+  top: 0px;
+  left: 110px;
+  width: 379px;
+  height: 170px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 0.22;
+}
+
+.frame {
+  background: url("./Assets/timeline.svg");
+  width: 90px;
+  height: 100px;
+  font-size: 36px;
+  text-align: center;
+  color: #8a11bf;
+}
+.frame p {
+  color: #5f0089;
+  font-size: 23px;
+}
+#amPm {
+  background: url("./Assets/AM_svg.svg");
+  width: 80px;
+  height: 90px;
+  margin-left: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setTime {
+  width: 566px;
+  height: 300px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 35px 25px 0px 25px;
+  color: #3d087b;
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+}
+.morningImg {
+  background-image: url(./Assets/wake_up.svg);
+}
+.lunchImg {
+  background-image: url(./Assets/lunch_time.svg);
+}
+.napImg {
+  background-image: url(./Assets/nap_time.svg);
+}
+.setTime .flex {
+  justify-content: unset;
+}
+.setTime .flex > div {
+  width: 34px;
+  height: 34px;
+}
+.borderLeft {
+  height: 30px;
+  width: 18px;
+  border-right: 1px solid grey;
+  margin: 10px 0;
+}
+.setTime label {
+  margin-top: 5px;
+  margin-left: 25px;
+  font-weight: 500;
+}
+.setTime select {
+  color: #3d087bde;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  width: 281px;
+  height: 45px;
+  letter-spacing: 0.25px;
+  padding-left: 10px;
+  margin-left: auto;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
+
+#setTimeButton {
+  width: 299px;
+  height: 50px;
+  background: transparent
+    linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%)
+    0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  color: white;
+  font-size: 24px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+#setTimeButton:hover {
+  cursor: pointer;
+  background: transparent
+    linear-gradient(-113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%)
+    0% 0% no-repeat padding-box;
+}
+
+#selectedTime {
+  background: #7e54cb;
+  margin-top: 20px;
+  height: 125px;
+  color: white;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  display: none;
+}
+
+#main-right {
+  width: 600px;
+  height: 500px;
+  background: white;
+  background-repeat: no-repeat;
+  background-image: url(./Assets/default1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#main-right p {
+  color: #8e53f0;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  /* font-family: "Manrope", sans-serif; */
+  text-align: center;
+}
